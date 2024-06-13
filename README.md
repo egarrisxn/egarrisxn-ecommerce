@@ -1,11 +1,12 @@
 # Egarrisxn Ecommerce
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/egarrisxn-ecommerce)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub repo size](https://img.shields.io/github/repo-size/egarrisxn/egarrisxn-ecommerce)
 
 ## Overview
 
 This is a complete Ecommerce site using Stripe, Sanity, Nextjs, and more!
 
+![egarrisxn-ecommerce](https://github.com/egarrisxn/egarrisxn-ecommerce/assets/126130230/d478dae2-46f6-4941-814e-663409d4f271)
 
 ## Technologies
 
