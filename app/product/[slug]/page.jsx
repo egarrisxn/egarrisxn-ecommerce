@@ -36,21 +36,20 @@ export default async function ProductPge({params}) {
           <div className='md:py-8'>
             <div className='mb-2 md:mb-3'>
               <span className='mb-0.5 inline-block text-gray-300'>{data.categoryName}</span>
-              <h2 className='text-2xl font-bold text-gray-500 lg:text-3xl'>{data.name}</h2>
+              <h2 className='text-2xl font-bold text-gray-400 lg:text-3xl'>{data.name}</h2>
             </div>
 
             <div className='mb-6 flex items-center gap-3 md:mb-10'>
-              <Button className='gap-x-2 rounded-full'>
-                <span className='text-sm'>4.5</span>
-                <Star className='h-5 w-5' />
+              <Button className='gap-x-2 rounded-3xl bg-primary/70'>
+                <span className='text-sm'>4.8</span>
+                <Star className='size-4' />
               </Button>
-
-              <span className='text-sm text-gray-300 transition duration-100'>24 Ratings</span>
+              <span className='text-sm text-gray-300 transition duration-100'>68 Ratings</span>
             </div>
 
             <div className='mb-4'>
               <div className='flex items-end gap-2'>
-                <span className='text-xl font-bold text-gray-400 md:text-2xl'>${data.price}</span>
+                <span className='text-xl font-bold text-gray-300 md:text-2xl'>${data.price}</span>
                 <span className='mb-0.5 text-primary line-through'>${data.price + 10.01}</span>
               </div>
 
@@ -83,7 +82,7 @@ export default async function ProductPge({params}) {
               />
             </div>
 
-            <p className='mt-12 text-base tracking-wide text-gray-300'>{data.description}</p>
+            <p className='mt-12 text-base tracking-wide text-gray-500'>{data.description}</p>
           </div>
         </div>
       </div>

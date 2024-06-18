@@ -25,7 +25,7 @@ export default async function Newest() {
     <div>
       <div className='mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8'>
         <div className='flex items-center justify-between'>
-          <h2 className='text-2xl font-bold tracking-tight text-gray-300'>Our Newest products</h2>
+          <h2 className='text-2xl font-bold tracking-tight text-gray-300'>New Products</h2>
 
           <Link className='flex items-center gap-x-1 text-primary' href='/All-Products'>
             See All{' '}
@@ -39,7 +39,7 @@ export default async function Newest() {
           {data.map((product) => (
             <div key={product._id} className='group relative'>
               <Link href={`/product/${product.slug}`}>
-                <div className='aspect-square w-full overflow-hidden rounded-md bg-gray-100 group-hover:opacity-80 lg:h-80'>
+                <div className='aspect-square w-full overflow-hidden rounded-md bg-gray-100 shadow-sm shadow-gray-100 group-hover:opacity-80 lg:h-80'>
                   <Image
                     src={product.imageUrl}
                     alt='Product image'
@@ -51,10 +51,10 @@ export default async function Newest() {
 
                 <div className='mt-4 flex justify-between'>
                   <div>
-                    <h3 className='text-sm text-gray-400'>{product.name}</h3>
+                    <h3 className='text-sm text-gray-400 hover:text-white'>{product.name}</h3>
                     <p className='mt-1 text-sm text-gray-300'>{product.categoryName}</p>
                   </div>
-                  <p className='text-sm font-medium text-gray-500'>${product.price}</p>
+                  <p className='text-sm font-medium text-gray-300'>${product.price}</p>
                 </div>
               </Link>
             </div>

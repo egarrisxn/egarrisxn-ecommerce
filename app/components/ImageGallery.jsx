@@ -13,7 +13,10 @@ export default function ImageGallery({images}) {
     <div className='grid gap-4 lg:grid-cols-5'>
       <div className='order-last flex gap-4 lg:order-none lg:flex-col'>
         {images.map((image, idx) => (
-          <div key={idx} className='overflow-hidden rounded-lg bg-gray-100'>
+          <div
+            key={idx}
+            className='overflow-hidden rounded-lg bg-gray-100 shadow-sm shadow-gray-100'
+          >
             <Image
               src={urlFor(image).url()}
               width={200}
@@ -26,7 +29,7 @@ export default function ImageGallery({images}) {
         ))}
       </div>
 
-      <div className='relative overflow-hidden rounded-lg bg-gray-100 lg:col-span-4'>
+      <div className='relative overflow-hidden rounded-lg bg-gray-100 shadow-sm shadow-gray-100 lg:col-span-4'>
         <Image
           src={urlFor(bigImage).url()}
           alt='Photo'

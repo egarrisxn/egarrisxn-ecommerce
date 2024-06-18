@@ -8,8 +8,30 @@ import MyFooter from './components/MyFooter'
 const inter = Inter({subsets: ['latin']})
 
 export const metadata = {
-  title: 'The Unofficial Merch Store',
-  description: 'The unofficial Merch Store',
+  metadataBase: new URL('https://egarrisxn-ecommerce.vercel.app'),
+  title: 'Unofficial Merchandise',
+  description: 'The unofficial merch store for Unofficial Merchandise.',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['sanity', 'next', 'react', 'tailwindcss', 'cms', 'ecommerce', 'egarrisxn'],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    title: 'Unofficial Merchandise',
+    description: 'The unofficial merch store for Unofficial Merchandise.',
+    url: 'https://egarrisxn-ecommerce.vercel.app',
+    siteName: 'Unofficial Merchandise',
+  },
 }
 
 export default function RootLayout({children}) {

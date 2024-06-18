@@ -31,7 +31,7 @@ export default async function AllPage({params}) {
           {data.map((product) => (
             <div key={product._id} className='group relative'>
               <Link href={`/product/${product.slug}`}>
-                <div className='aspect-square w-full overflow-hidden rounded-md bg-gray-100 group-hover:opacity-80 lg:h-80'>
+                <div className='aspect-square w-full overflow-hidden rounded-md bg-gray-100 shadow-sm shadow-gray-100 group-hover:opacity-80 lg:h-80'>
                   <Image
                     src={product.imageUrl}
                     alt='Product image'
@@ -43,10 +43,10 @@ export default async function AllPage({params}) {
 
                 <div className='mt-4 flex justify-between'>
                   <div>
-                    <h3 className='text-sm text-gray-400'>{product.name}</h3>
+                    <h3 className='text-sm text-gray-400 hover:text-white'>{product.name}</h3>
                     <p className='mt-1 text-sm text-gray-300'>{product.categoryName}</p>
                   </div>
-                  <p className='text-sm font-medium text-gray-500'>${product.price}</p>
+                  <p className='text-sm font-medium text-gray-300'>${product.price}</p>
                 </div>
               </Link>
             </div>
