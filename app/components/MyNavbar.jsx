@@ -10,7 +10,7 @@ const links = [
   {name: 'Shirts', href: '/Shirts'},
   {name: 'Outerwear', href: '/Outerwear'},
   {name: 'Accessories', href: '/Accessories'},
-  {name: 'All Products', href: '/All-Products'},
+  {name: 'All Products', href: '/All'},
 ]
 
 export default function MyNavbar() {

@@ -8,7 +8,7 @@ import MyFooter from './components/MyFooter'
 const inter = Inter({subsets: ['latin']})
 
 export const metadata = {
-  metadataBase: new URL('https://egarrisxn-ecommerce.vercel.app'),
+  metadataBase: new URL('https://unofficialmerchandise.vercel.app'),
   title: 'Unofficial Merchandise',
   description: 'The unofficial merch store for Unofficial Merchandise.',
   referrer: 'origin-when-cross-origin',
@@ -29,7 +29,7 @@ export const metadata = {
     locale: 'en_US',
     title: 'Unofficial Merchandise',
     description: 'The unofficial merch store for Unofficial Merchandise.',
-    url: 'https://egarrisxn-ecommerce.vercel.app',
+    url: 'https://unofficialmerchandise.vercel.app',
     siteName: 'Unofficial Merchandise',
   },
 }
