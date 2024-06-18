@@ -6,7 +6,7 @@
 
 This is a complete ecommerce webstore utilizing Stripe, Sanity, Next.js, and more!
 
-![egarrisxn-ecommerce](https://github.com/egarrisxn/egarrisxn-ecommerce/assets/126130230/d478dae2-46f6-4941-814e-663409d4f271)
+![unofficialmerchandise](https://github.com/egarrisxn/unofficial-merchandise/assets/126130230/5e99b3bb-1584-4c2f-9143-7f00080ca185)
 
 ## Technologies
 
